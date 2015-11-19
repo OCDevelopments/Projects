@@ -43,3 +43,4 @@ Temporary Items
 .apdisk
 TestNameGenerator/TestNameGenerator/obj/
 *.suo
+TestNameGenerator/TestNameGenerator/obj/Debug/
