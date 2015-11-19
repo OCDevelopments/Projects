@@ -29,8 +29,8 @@
 
 .resultText {
     overflow: auto;
-    position: relative;
-    left: 15px;
+    /*position: relative;
+    left: 15px;*/
 }
 
 .operButt {
