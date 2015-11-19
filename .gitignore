@@ -41,7 +41,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
-TestNameGenerator/TestNameGenerator/obj/
 *.suo
+TestNameGenerator/TestNameGenerator/obj/
 TestNameGenerator/TestNameGenerator/obj/Debug/
 TestNameGenerator/TestNameGenerator/obj/Debug/TestNameGenerator.csproj.FileListAbsolute.txt
