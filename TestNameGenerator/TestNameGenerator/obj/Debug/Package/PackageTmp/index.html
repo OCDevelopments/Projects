@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Name Generator</title>
+    <link rel="icon" href="images/cocIco.jpg" type="image/x-icon" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+<!--    <link href="css/angular-tooltips.css" rel="stylesheet" />-->
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-clipboard.js"></script>
+    <script src="js/angular.audio.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/generator/generatorCtrl.js"></script>
+    <script src="js/ui-bootstrap-0.13.4.min.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.13.4.min.js"></script>
+</head>
+
+<body ng-app="testNameGenerator">
+
+    <div id="lamp">
+        <input type="radio" name="switch" value="on">
+        <input type="radio" name="switch" value="off" checked="checked">
+        <label for="switch" class="entypo-lamp"></label>
+        <div class="lamp">
+            <div class="gonna-give-light"></div>
+        </div>
+    </div>
+
+
+    <!--  </div>-->
+    <form name="genForm" novalidate ng-controller="GeneratorCtrl as vm">
+        <div class="container">
+            <div class="vertical-center-row">
+                <div class="panel panel-primary shadow">
+                    <div class="panel panel-heading" style="font-size: large;">
+                        Test Name Generator
+                    </div>
+                    <div class="panel-body">
+                        <div class="includechk">
+                            <input type="checkbox" checked="checked" ng-model="vm.isIncludePreSuf" ng-change="vm.beforeCopy()"> Wrap with test method
+                        </div>
+                        <div class="inputField ">
+                            <input name="testName" ng-focus="vm.hideToolTip()" ng-keypress="vm.triggerCopy($event)" ng-maxlength="136" ng-minlength="5" ng-model="vm.textBeforeConverted" ng-change="vm.beforeCopy()" type="text" class="form-control" placeholder="Enter a test name">
+                        </div>
+                        <div class="operButt col-sm-2">
+                            <button id="copyButton" type="button" class="btn btn-success tooltipi" clipboard text="vm.convertedText" on-copied="vm.success()" on-error="vm.fail(err)" ng-disabled="!vm.textBeforeConverted" ng-mousedown="vm.mousedown()" tooltip-html-unsafe="Copied to clipboard" tooltip-trigger="click" tooltip-placement="top" popoverautoclose="3000">Copy</button>
+                            <button type="button" class="btn btn-danger" ng-click="vm.clearText()" ng-disabled="!vm.textBeforeConverted">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resultContainer" ng-show="vm.convertedText"><div class="label label-default resultText" ng-bind="vm.convertedText"></div></div>
+        <div class="resultContainer" ng-show="genForm.testName.$error.maxlength"><div class="label label-danger resultText">Maximun 136 characters allowed!</div></div>
+        <div class="resultContainer" ng-show="genForm.testName.$error.minlength"><div class="label label-danger resultText">Minimum 5 characters for a test name!</div></div>
+    </form>
+</body>
+</html>

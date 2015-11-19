@@ -1,0 +1,12 @@
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextConverter\TestTextConverter\bin\TestNameBuilder.dll.config
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextConverter\TestTextConverter\bin\TestNameBuilder.dll
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextConverter\TestTextConverter\bin\TestNameBuilder.pdb
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextConverter\TestTextConverter\obj\Debug\TestNameBuilder.csprojResolveAssemblyReference.cache
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextConverter\TestTextConverter\obj\Debug\TestNameBuilder.dll
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextConverter\TestTextConverter\obj\Debug\TestNameBuilder.pdb
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextBuilder\TestTextBuilder\bin\TestNameBuilder.dll.config
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextBuilder\TestTextBuilder\bin\TestNameBuilder.dll
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextBuilder\TestTextBuilder\bin\TestNameBuilder.pdb
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextBuilder\TestTextBuilder\obj\Debug\TestNameBuilder.csprojResolveAssemblyReference.cache
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextBuilder\TestTextBuilder\obj\Debug\TestNameBuilder.dll
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextBuilder\TestTextBuilder\obj\Debug\TestNameBuilder.pdb

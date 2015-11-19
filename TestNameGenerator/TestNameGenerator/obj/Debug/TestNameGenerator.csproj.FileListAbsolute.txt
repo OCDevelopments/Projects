@@ -1,0 +1,12 @@
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextBuilder\TestNameGenerator\bin\TestNameGenerator.dll.config
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextBuilder\TestNameGenerator\bin\TestNameGenerator.dll
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextBuilder\TestNameGenerator\bin\TestNameGenerator.pdb
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextBuilder\TestNameGenerator\obj\Debug\TestNameGenerator.dll
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextBuilder\TestNameGenerator\obj\Debug\TestNameGenerator.pdb
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestTextBuilder\TestNameGenerator\obj\Debug\TestNameGenerator.csprojResolveAssemblyReference.cache
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestNameGenerator\TestNameGenerator\bin\TestNameGenerator.dll.config
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestNameGenerator\TestNameGenerator\bin\TestNameGenerator.dll
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestNameGenerator\TestNameGenerator\bin\TestNameGenerator.pdb
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestNameGenerator\TestNameGenerator\obj\Debug\TestNameGenerator.csprojResolveAssemblyReference.cache
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestNameGenerator\TestNameGenerator\obj\Debug\TestNameGenerator.dll
+C:\Users\oren.c\Documents\Visual Studio 2013\Projects\TestNameGenerator\TestNameGenerator\obj\Debug\TestNameGenerator.pdb

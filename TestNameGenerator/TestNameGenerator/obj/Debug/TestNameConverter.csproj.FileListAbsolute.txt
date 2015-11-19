@@ -1,0 +1,6 @@
+c:\users\oren.c\documents\visual studio 2013\Projects\TestTextConverter\TestTextConverter\bin\TestNameConverter.dll.config
+c:\users\oren.c\documents\visual studio 2013\Projects\TestTextConverter\TestTextConverter\bin\TestNameConverter.dll
+c:\users\oren.c\documents\visual studio 2013\Projects\TestTextConverter\TestTextConverter\bin\TestNameConverter.pdb
+c:\users\oren.c\documents\visual studio 2013\Projects\TestTextConverter\TestTextConverter\obj\Debug\TestNameConverter.csprojResolveAssemblyReference.cache
+c:\users\oren.c\documents\visual studio 2013\Projects\TestTextConverter\TestTextConverter\obj\Debug\TestNameConverter.dll
+c:\users\oren.c\documents\visual studio 2013\Projects\TestTextConverter\TestTextConverter\obj\Debug\TestNameConverter.pdb
