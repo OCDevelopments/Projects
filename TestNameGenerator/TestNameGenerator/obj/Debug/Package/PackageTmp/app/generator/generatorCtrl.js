@@ -96,7 +96,7 @@
         }
 
         function buildTextWithPrefixnSuffix() {
-            vm.convertedText = "[TestMethod]\npublic void " + vm.convertedText + "() " + "{ " + " //** WRITE HERE THE TESTCASE NO. **" + "\n}";
+            vm.convertedText = "[TestMethod]\npublic void " + vm.convertedText + "() " + "{ " + " /* WRITE HERE THE TESTCASE NO. */" + "\n}";
         }
     }
 
