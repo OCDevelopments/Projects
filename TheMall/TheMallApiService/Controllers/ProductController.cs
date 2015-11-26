@@ -45,14 +45,14 @@ namespace TheMallApiService.Controllers
 
         //Get api/Product
         [HttpGet]
-        public IEnumerable<Product> Get()
+        public IEnumerable<Product> GetAll()
         {
             return products;
         }
 
         //Get api/Product/{id}
         [HttpGet]
-        public IHttpActionResult GetA(int id)
+        public IHttpActionResult GetById(int id)
         {
             var product = products.FirstOrDefault(o => o.Id == id);
 
