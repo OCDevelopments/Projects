@@ -12,10 +12,35 @@ namespace TheMallApiService.Controllers
     public class ProductController : ApiController
     {
         //Mock
-        Product[] products = { 
-            new Product { Id = 1, Name = "Chair", Category = "Groceries", Price = 1,Description  = "Include 4 legs!"}, 
-            new Product { Id = 2, Name = "Table", Category = "Toys", Price = 3.75M ,Description  = "Include 3 legs!"}, 
-            new Product { Id = 3, Name = "Hammer", Category = "Hardware", Price = 16.99M ,Description  = "Include driller!"} 
+        private Product[] products =
+        {
+            new Product
+            {
+                Id = 1,
+                Name = "Chair",
+                Category = "Groceries",
+                Price = 13.99M,
+                Currency = "ILS",
+                Details = "Include 4 legs!"
+            },
+            new Product
+            {
+                Id = 2,
+                Name = "Table",
+                Category = "Toys",
+                Price = 3.75M,
+                Currency = "ILS",
+                Details = "Include 3 legs!"
+            },
+            new Product
+            {
+                Id = 3,
+                Name = "Hammer",
+                Category = "Hardware",
+                Price = 16.99M,
+                Currency = "ILS",
+                Details = "Include driller!"
+            }
         };
 
         //Get api/Product
