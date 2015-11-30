@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace TheMallApiService.Models
+namespace TheMall.Model
 {
     public class Product
     {
         public int Id { get; set; }
         public int StoreId { get; set; }
+        public int CategoryId { get; set; }
         public string Name { get; set; }
-
         public int Catalog { get; set; }
         public string Model { get; set; }
         public string Currency { get; set; }

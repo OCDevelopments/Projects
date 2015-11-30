@@ -3,9 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMallApiService", "TheMallApiService\TheMallApiService.csproj", "{A7B98710-86F4-430F-8724-259700140A36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMall.API", "TheMall.API\TheMall.API.csproj", "{A7B98710-86F4-430F-8724-259700140A36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMallPortal", "TheMallPortal\TheMallPortal.csproj", "{FF0213C6-8693-43DA-A4CB-A81030BD96F8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMall.Portal", "TheMall.Portal\TheMall.Portal.csproj", "{FF0213C6-8693-43DA-A4CB-A81030BD96F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMall.Repository", "TheMall.Repository\TheMall.Repository.csproj", "{D680F186-9D96-47FC-81B2-017654BD0F78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMall.DAL", "TheMall.DAL\TheMall.DAL.csproj", "{2E1CBC72-1A22-4B70-A740-8557E5AAB0F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMall.Model", "TheMall.Model\TheMall.Model.csproj", "{350C1807-CF7E-4B72-8F4B-375B6D31939D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMall.Common", "TestMall.Common\TestMall.Common.csproj", "{444CCC9C-63F7-4749-9BFD-4023A9FD8A57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "REST API", "REST API", "{6453D47A-DEF7-4D67-A608-8A3B613DD24B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +31,27 @@ Global
 		{FF0213C6-8693-43DA-A4CB-A81030BD96F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF0213C6-8693-43DA-A4CB-A81030BD96F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF0213C6-8693-43DA-A4CB-A81030BD96F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D680F186-9D96-47FC-81B2-017654BD0F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D680F186-9D96-47FC-81B2-017654BD0F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D680F186-9D96-47FC-81B2-017654BD0F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D680F186-9D96-47FC-81B2-017654BD0F78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E1CBC72-1A22-4B70-A740-8557E5AAB0F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1CBC72-1A22-4B70-A740-8557E5AAB0F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1CBC72-1A22-4B70-A740-8557E5AAB0F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1CBC72-1A22-4B70-A740-8557E5AAB0F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{350C1807-CF7E-4B72-8F4B-375B6D31939D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350C1807-CF7E-4B72-8F4B-375B6D31939D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350C1807-CF7E-4B72-8F4B-375B6D31939D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350C1807-CF7E-4B72-8F4B-375B6D31939D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{444CCC9C-63F7-4749-9BFD-4023A9FD8A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444CCC9C-63F7-4749-9BFD-4023A9FD8A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444CCC9C-63F7-4749-9BFD-4023A9FD8A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{444CCC9C-63F7-4749-9BFD-4023A9FD8A57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A7B98710-86F4-430F-8724-259700140A36} = {6453D47A-DEF7-4D67-A608-8A3B613DD24B}
 	EndGlobalSection
 EndGlobal
