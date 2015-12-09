@@ -18,51 +18,59 @@ namespace TheMall.Repository.Mock
         {
             //===========================Product=================================
 
-            Product[] products = 
+            Product[] products =
             {
                 new Product
                 {
                     Id = 1,
-                    StoreId = 1,
+                    //StoreId = 1,
                     Name = "Chair",
-                    Category = "Groceries",
-                    CategoryId = 1,
+                    //Category = "Groceries",
+                    //CategoryId = 1,
                     Price = 13.99M,
                     Currency = "ILS",
-                    Details = "Include 4 legs!"
+                    Details = "Include 4 legs!",
+                    ProductCategory = new Category {Id = 1, Name = "Groceries"},
+                    ProductStore = new Store {Id = 1, Name = "Fastraza shop"}
                 },
                 new Product
                 {
                     Id = 2,
-                    StoreId = 1,
+                    //StoreId = 1,
                     Name = "Table",
-                    Category = "Toys",
-                    CategoryId = 1,
+                    //Category = "Toys",
+                    //CategoryId = 1,
                     Price = 3.75M,
                     Currency = "ILS",
-                    Details = "Include 3 legs!"
+                    Details = "Include 3 legs!",
+                    ProductCategory = new Category {Id = 1, Name = "Toys"},
+                    ProductStore = new Store {Id = 1, Name = "ToyRus"}
                 },
                 new Product
                 {
                     Id = 3,
-                    StoreId = 2,
+                    //StoreId = 2,
                     Name = "Hammer",
-                    Category = "Hardware",
-                    CategoryId = 2,
+                    //Category = "Hardware",
+                    //CategoryId = 2,
                     Price = 16.99M,
                     Currency = "ILS",
-                    Details = "Include driller!"
+                    Details = "Include driller!",
+                    ProductCategory = new Category {Id = 2, Name = "Hardware"},
+                    ProductStore = new Store {Id = 2, Name = "Home Center"}
                 },
                 new Product
                 {
                     Id = 4,
-                    StoreId = 3,
+                    //StoreId = 3,
                     Name = "Hammer2",
-                    Category = "Hardware2",
-                    CategoryId = 3,
+                    //Category = "Hardware2",
+                    //CategoryId = 3,
                     Price = 14.99M,
                     Currency = "ILS",
-                    Details = "Include driller + zriller!"
+                    Details = "Include driller + zriller!",
+                    ProductCategory = new Category {Id = 3, Name = "Hardware2"},
+                    ProductStore = new Store {Id = 3, Name = "Home Center2"}
                 }
             };
 
@@ -154,7 +162,7 @@ namespace TheMall.Repository.Mock
 
         public void Dispose()
         {
-          
+
         }
     }
 }

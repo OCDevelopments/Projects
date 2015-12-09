@@ -18,7 +18,7 @@ namespace TheMall.Repository
 
         public IEnumerable<Product> GetProductsByCategoryId(int categoryId)
         {
-            var query = GetAll().Where(o => o.CategoryId == categoryId);
+            var query = GetAll().Where(o => o.ProductCategory.Id == categoryId);
             return query;
         }
     }

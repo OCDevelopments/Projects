@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMall.Portal", "TheMall.P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMall.Repository", "TheMall.Repository\TheMall.Repository.csproj", "{D680F186-9D96-47FC-81B2-017654BD0F78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMall.DAL", "TheMall.DAL\TheMall.DAL.csproj", "{2E1CBC72-1A22-4B70-A740-8557E5AAB0F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMall.Data", "TheMall.DAL\TheMall.Data.csproj", "{2E1CBC72-1A22-4B70-A740-8557E5AAB0F0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMall.Model", "TheMall.Model\TheMall.Model.csproj", "{350C1807-CF7E-4B72-8F4B-375B6D31939D}"
 EndProject
