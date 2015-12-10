@@ -13,11 +13,11 @@ namespace TheMall.Repository
         IQueryable<TEntity> FindBy(Expression<Func<TEntity, bool>> predicate);
         void Add(TEntity entity);
         void Delete(TEntity entity);
-        void Edit(TEntity entity);
-        void Save();
+        void Update(TEntity entity);
+        //void Save();
 
         //=================================
-        IQueryable<TEntity> AsQueryable();
+        //IQueryable<TEntity> AsQueryable();
 //        IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
 //        TEntity Single(Expression<Func<TEntity, bool>> predicate);
 //        TEntity SingleOrDefault(Expression<Func<TEntity, bool>> predicate);

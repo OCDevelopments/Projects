@@ -10,14 +10,13 @@ namespace TheMall.Data
 {
     //http://bitoftech.net/2013/11/25/building-database-model-entityframework-code-first/
     //http://chsakell.com/2015/02/15/asp-net-mvc-solution-architecture-best-practices/
+    //http://blog.longle.net/2013/05/11/genericizing-the-unit-of-work-pattern-repository-pattern-with-entity-framework-in-mvc/ //IMPORTANT!!! try to implement this
 
-    internal class TheMallContext : DbContext
+    public class TheMallContext : DbContext
     {
         static TheMallContext()
         {
-            //Database.SetInitializer<TheMallContext>(null);
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<TheMallContext, TheMallContextMigrationConfiguration>());
-
         }
 
         public TheMallContext()
@@ -25,6 +24,16 @@ namespace TheMall.Data
         {
             Configuration.ProxyCreationEnabled = false;
             Configuration.LazyLoadingEnabled = false;
+        }
+
+        public virtual void Commit()
+        {
+            base.SaveChanges();
+        }
+
+        public virtual void Rollback()
+        {
+            //base.();
         }
 
         public DbSet<Product> Products { get; set; }

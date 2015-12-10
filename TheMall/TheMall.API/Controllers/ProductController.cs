@@ -14,20 +14,23 @@ namespace TheMall.API.Controllers
     [RoutePrefix("api")]
     public class ProductController : ApiController
     {
-        private readonly IProductRepository _repository;
+//        private readonly IProductRepository _repository;
+        private readonly IUnitOfWork _uow;
 
         public ProductController() { }
 
-        public ProductController(IProductRepository repository)
+        public ProductController(IUnitOfWork uow,IProductRepository repository)
         {
-            _repository = repository;
+            //_repository = repository;
+            _uow = uow;
         }
 
         //Get api/Product
         [HttpGet]
         public IEnumerable<Product> GetAll()
         {
-            return _repository.GetAll();
+            //return _repository.GetAll();
+            return _uow.Repository<Product>().GetAll();
         }
 
         //Get api/Product/{id}
@@ -35,7 +38,10 @@ namespace TheMall.API.Controllers
         public IHttpActionResult GetById(int id)
         {
             //var product = _repository.Product.FirstOrDefault(o => o.Id == id);
-            var product = _repository.GetById(id);
+            //var product = _repository.GetById(id);
+//            var product = _uow.<Product>().GetById(id);
+
+
 
             if (product == null)
             {

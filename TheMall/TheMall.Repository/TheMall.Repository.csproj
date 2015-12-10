@@ -30,7 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CategoryRepository.cs" />
+    <Compile Include="DbFactory.cs" />
+    <Compile Include="IDbFactory.cs" />
+    <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Mock\IDataContext.cs" />
     <Compile Include="Mock\MockData.cs" />
     <Compile Include="GenericRepository.cs" />
@@ -50,12 +60,21 @@
     <Compile Include="StoreRepository.cs" />
     <Compile Include="ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TheMall.Data\TheMall.Data.csproj">
+      <Project>{2e1cbc72-1a22-4b70-a740-8557e5aab0f0}</Project>
+      <Name>TheMall.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TheMall.Model\TheMall.Model.csproj">
       <Project>{350c1807-cf7e-4b72-8f4b-375b6d31939d}</Project>
       <Name>TheMall.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

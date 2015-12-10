@@ -1,77 +1,81 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TheMall.Data;
 using TheMall.Repository.Mock;
 
 namespace TheMall.Repository
 {
     public abstract class GenericRepository<TEntity, TContext> : IRepository<TEntity>
         where TEntity : class
-        where TContext : class, new() //DbContext //where TContext : DbContext, new()
+        where TContext : DbContext, new()
+    //where TContext : class, new() //when working with mock
     {
-        //protected TContext DataContext = new TContext(); //todo: remark when implemet the EF
-        private readonly IDataContext<TEntity> _dataContext;
+        //protected readonly TContext DataContext;// = new TContext(); //todo: remark when implemet the EF
+        //private readonly IDataContext<TEntity> _dataContext;
 
-        public GenericRepository()
+        private TContext _dbContext;
+        private readonly IDbSet<TEntity> _dbSet;
+
+        public GenericRepository(IDbFactory<TContext> dbFactory)
         {
-            _dataContext = new MockData<TEntity>();
+            DbFactory = dbFactory;
+            _dbSet = DbContext.Set<TEntity>();
         }
 
-        public IDataContext<TEntity> Context
+        protected IDbFactory<TContext> DbFactory
         {
-            get { return _dataContext; }
+            get;
+            private set;
+        }
+
+        protected TContext DbContext
+        {
+            get { return _dbContext ?? (_dbContext = DbFactory.Init()); }
         }
 
         public virtual IQueryable<TEntity> GetAll()
         {
-            //IQueryable<TEntity> query = DataContext.Set<TEntity>();
-            //return query;
-
-            IQueryable<TEntity> query = Context.Entity;//.Cast<TEntity>();
+            IQueryable<TEntity> query = _dbSet;
             return query;
+
+            //            IQueryable<TEntity> query = Context.Entity;//.Cast<TEntity>();
+            //            return query;
         }
 
         public virtual IQueryable<TEntity> FindBy(System.Linq.Expressions.Expression<Func<TEntity, bool>> predicate)
         {
-            //IQueryable<T> query = _entities.Set<T>().Where(predicate);
-            //return query;
-
-            IQueryable<TEntity> query = GetAll().Where(predicate);
+            IQueryable<TEntity> query = _dbSet.Where(predicate);
             return query;
+
+            //            IQueryable<TEntity> query = GetAll().Where(predicate);
+            //            return query;
         }
 
         public virtual void Add(TEntity entity)
         {
-            //DataContext.Set<TEntity>().Add(entity);
-
-            throw new NotImplementedException();
+            _dbSet.Add(entity);
         }
 
         public virtual void Delete(TEntity entity)
         {
-            //DataContext.Set<TEntity>().Remove(entity);
-
-            throw new NotImplementedException();
+            _dbSet.Remove(entity);
         }
 
-        public virtual void Edit(TEntity entity)
+        public virtual void Update(TEntity entity)
         {
-            //DataContext.DataContext(entity).State = System.Data.EntityState.Modified;
-
-            throw new NotImplementedException();
+            _dbSet.Attach(entity);
+            DbContext.Entry(entity).State = EntityState.Modified;
         }
 
-        public virtual IQueryable<TEntity> AsQueryable()
-        {
-            return _dataContext.Entity.AsQueryable();
-        }
+        //        public virtual IQueryable<TEntity> AsQueryable()
+        //        {
+        //            return _dataContext.Entity.AsQueryable();
+        //        }
 
-        public virtual void Save()
-        {
-            //DataContext.SaveChanges();
-        }
 
         public void Dispose()
         {
