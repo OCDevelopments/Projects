@@ -66,6 +66,10 @@ input.ng-dirty.ng-invalid {
     border-top: 5px solid black;
 }
 
+.att-color {
+    color: #58D3F7;
+}
+
 /*===============LAMP=================*/
 
 @import url(http://weloveiconfonts.com/api/?family=entypo);

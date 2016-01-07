@@ -44,7 +44,7 @@
     max-width: 83%;
 }
 .includechk {
-    margin: -12px 5px 10px 1px;
+    margin: -10px 5px 10px 1px;
 }
 /*Red border incase validation fails*/
 input.ng-dirty.ng-invalid {
@@ -64,6 +64,10 @@ input.ng-dirty.ng-invalid {
 /* Tooltip on top */
 .tooltipi + .tooltip.top > .tooltip-arrow {
     border-top: 5px solid black;
+}
+
+.att-color {
+    color: #58D3F7;
 }
 
 /*===============LAMP=================*/

@@ -10,6 +10,7 @@
         vm.isIncludePreSuf = true;
         vm.isRemoveUnderscores = false;
         vm.isSound = true;
+        vm.isLowerCase = false;
         var minlength = 5;
         var maxlength = 136;
 
@@ -86,14 +87,22 @@
                 return;
             }
 
-            vm.convertedText = vm.textBeforeConverted.replace(/\w\S*/g, function (txt) {
-                return txt.charAt(0).toUpperCase() + txt.slice(1);
-            });
+            if (!vm.isLowerCase) {
+                vm.convertedText = vm.textBeforeConverted.replace(/\w\S*/g, function (txt) {
+                    return txt.charAt(0).toUpperCase() + txt.slice(1);
+                });
+            } else {
+                vm.convertedText = vm.textBeforeConverted.replace(/\w\S*/g, function (txt) {
+                    return txt.toLowerCase();
+                });
+            }
+
             vm.convertedText = allowedChars(vm.convertedText);
             vm.convertedText = replaceSpacesWithUnderscore(vm.convertedText);
             if (vm.isRemoveUnderscores) {
                 vm.convertedText = replaceUnderscoresWithSpaces(vm.convertedText);
             }
+
             vm.convertedText = replaceMultiplaeOccuranceWithOneUnderscore(vm.convertedText);
 
             if (vm.isIncludePreSuf) {
