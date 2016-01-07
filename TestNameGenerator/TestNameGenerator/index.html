@@ -39,7 +39,13 @@
                     </div>
                     <div class="panel-body">
                         <div class="includechk">
+                            <input type="checkbox" checked="checked" ng-model="vm.isSound" ng-change="vm.beforeCopy()"> No sound for me!
+                        </div>
+                        <div class="includechk">
                             <input type="checkbox" checked="checked" ng-model="vm.isIncludePreSuf" ng-change="vm.beforeCopy()"> Wrap with test method
+                        </div>
+                        <div class="includechk">
+                            <input type="checkbox" checked="checked" ng-model="vm.isRemoveUnderscores" ng-change="vm.beforeCopy()"> Remove underscores
                         </div>
                         <div class="inputField ">
                             <input name="testName" ng-focus="vm.hideToolTip()" ng-keypress="vm.triggerCopy($event)" ng-maxlength="136" ng-minlength="5" ng-model="vm.textBeforeConverted" ng-change="vm.beforeCopy()" type="text" class="form-control" placeholder="Enter a test name">

@@ -16,3 +16,9 @@ C:\Users\oren.c\Google Drive\git\Projects\TestNameGenerator\TestNameGenerator\bi
 C:\Users\oren.c\Google Drive\git\Projects\TestNameGenerator\TestNameGenerator\obj\Debug\TestNameGenerator.csprojResolveAssemblyReference.cache
 C:\Users\oren.c\Google Drive\git\Projects\TestNameGenerator\TestNameGenerator\obj\Debug\TestNameGenerator.dll
 C:\Users\oren.c\Google Drive\git\Projects\TestNameGenerator\TestNameGenerator\obj\Debug\TestNameGenerator.pdb
+C:\Users\oren.c\Google Drive\gitOCDev\Projects\TestNameGenerator\TestNameGenerator\bin\TestNameGenerator.dll.config
+C:\Users\oren.c\Google Drive\gitOCDev\Projects\TestNameGenerator\TestNameGenerator\bin\TestNameGenerator.dll
+C:\Users\oren.c\Google Drive\gitOCDev\Projects\TestNameGenerator\TestNameGenerator\bin\TestNameGenerator.pdb
+C:\Users\oren.c\Google Drive\gitOCDev\Projects\TestNameGenerator\TestNameGenerator\obj\Debug\TestNameGenerator.csprojResolveAssemblyReference.cache
+C:\Users\oren.c\Google Drive\gitOCDev\Projects\TestNameGenerator\TestNameGenerator\obj\Debug\TestNameGenerator.dll
+C:\Users\oren.c\Google Drive\gitOCDev\Projects\TestNameGenerator\TestNameGenerator\obj\Debug\TestNameGenerator.pdb
